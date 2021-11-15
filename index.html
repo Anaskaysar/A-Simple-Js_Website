@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind -->
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="mx-auto">
+        <div class="grid grid-cols-2">
+            <div class="">
+                <img  class="ml-16 mt-24" src="images/mac.png" width="75%" alt="">
+            </div>
+            <div>
+                <h2 class="text-5xl font-semibold pb-3">Customize your Blue 24-inch iMac with Apple M1 chip.</h2>
+                <p class="">Apple M1 chip with 8-Core CPU with 4 performance cores and 4 effieciency cores, 7-core GPU,and 16 core Nueral Engine 8 GB unified memory 256GB SSD storage Two Thunderbolt/usb 4 ports magic Mouse Keyboard-US English</p>
+                <div>
+                    <div class="flex-auto mt-8">
+                      <h1 class="font-bold">Memory</h1>
+                      <button id="memory-base" class="border px-6 rounded py-2 font-medium hover:bg-gray-200 mt-2">8 GB unified memory</button>
+                      <button id="memory-extra" class="border px-6 rounded py-2 font-medium hover:bg-gray-200 mt-2 ">16 GB unified memory</button>
+                    </div>
+                    <div class="flex-auto mt-4">
+                      <h1 class="font-bold">Storage</h1>
+                      <button id="extra-storage-1" class="border px-6 rounded py-2 font-medium hover:bg-gray-200 mt-2">256GB SSD Storage</button>
+                      <button id="extra-storage-2" class="border px-6 rounded py-2 font-medium hover:bg-gray-200 mt-2">512GB SSD Storage</button>
+                      <button id="extra-storage-3" class="border px-6 rounded py-2 font-medium hover:bg-gray-200 mt-2">1TB SSD Storage</button>
+                    </div>
+                    <div class="flex-auto mt-4">
+                      <h1 class="font-bold">Choose Your Delivery Option</h1>
+                      <button id="free-delivery" class="border px-6 rounded py-2 font-medium hover:bg-gray-200 mt-2">Friday,Aug 25 Free prime Delivery</button>
+                      <button id="express-delivery" class="border px-6 rounded py-2 font-medium hover:bg-gray-2 00 mt-2">Friday,Aug 21 Delivery Charge $20</button>
+                    </div>
+                    <div class="mt-8">
+                        <table class="table">
+                            <tbody>
+                                <tr clas="mt-2" >
+                                    <th  class="text-left ">Best Price</th>
+                                    <td  class="pl-24">$<span id="best-price">1299</span> </td>  
+                                </tr>
+                                
+                                <tr clas="mt-2">
+                                    <th class="text-left">Extra Memory Cost</th>
+                                    <td class="pl-24">$<span id="extra-memory-price">0</span></td>
+                                </tr>
+                                
+                                <tr clas="mt-2">
+                                    <th class="text-left">Extra Storage Cost</th>
+                                    <td class="pl-24">$<span id="extra-storage-price">0</span></td>
+                                </tr>
+                                
+                                <tr clas="mt-2">
+                                    
+                                    <th class="text-left">Delivery Charge</th>
+                                    <td class="pl-24">$<span id="delivery-chrage">0</span></td>
+                                    
+                                
+                                <tr clas="mt-2"> 
+                                    <th class="text-left">Total Price</th>
+                                    <td class="pl-24">$<span id="total-price">1299</span></td>
+                                </tr>  
+                            </tbody>
+                            <hr>
+                        </table>
+                        <hr>
+                        <h1 class="mt-8 font-2xl font-semibold">Add Promo Code</h1>
+                        <div class="flex-auto mt-2">
+
+                            <input id="coupon-code"class="border border px-6 rounded py-2 " type="text" placeholder="Add Promo">
+                            <button id="apply-coupon" class="bg-red-600 border px-6 rounded py-2 font-medium hover:bg-gray-300 mt-2">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <h1 class="text-5xl text-center">Total:$ <span id="final-total">1299</span></h1>
+    </main>
+    <!-- script -->
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
